@@ -11,9 +11,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Tailwind CSS */
-@import "tailwindcss";
-
 /* Dark mode */
 @custom-variant dark (&:where(.dark, .dark *));
 
