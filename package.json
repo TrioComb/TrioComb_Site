@@ -16,6 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/cli": "^4.0.9",
     "@tailwindcss/postcss": "^4.0.17",
     "gatsby": "^5.14.1",
