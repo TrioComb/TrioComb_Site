@@ -14,7 +14,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
-import './index.css';
+import '../assets/css/output.css';
 import favIcon from '../assets/images/favicon.png'
 
 export default function IndexSeven() {
