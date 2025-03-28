@@ -8,7 +8,7 @@ export default function Footer() {
         <footer className="footer bg-slate-800 dark:bg-gray-900 relative text-gray-200 dark:text-gray-200">
             <div className="py-[30px] px-0 border-t border-slate-800">
                 <div className="container relative text-center">
-                    <div className="grid lg:grid-cols-12 md:grid-cols-3 grid-cols-1 items-center">
+                    <div className="grid lg:grid-cols-12 md:grid-cols-3 grid-cols-1 items-center comb-grid">
                         <div className="lg:col-span-2 md:text-start text-center">
                             <Link to="#" className="text-[22px] focus:outline-none">
                                 <img src={logo} className="mx-auto md:me-auto md:ms-0" alt="" />

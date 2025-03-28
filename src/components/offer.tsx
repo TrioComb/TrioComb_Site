@@ -17,7 +17,7 @@ export default function Offer() {
                 <p className="text-slate-400 max-w-xl mx-auto">We offer a collaborative environment where global talents can thrive and clients can scale with confidence. By fostering trust, flexibility, and opportunity, we create impactful partnerships that dliever real results-for everyone involved.</p>
             </div>
 
-            <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-6 gap-6 comb-grid">
                 {offerData.map((item:OfferData, index:number)=>( 
                     <div className="group relative overflow-hidden" key={index+'offer-item'}>
                         <div className="relative overflow-hidden rounded-md shadow-sm dark:shadow-gray-800">

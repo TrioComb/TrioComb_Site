@@ -13,6 +13,7 @@ import Footer from '../components/footer';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
+import '../assets/css/custom/layout.css'
 
 import favIcon from '../assets/images/favicon.png'
 

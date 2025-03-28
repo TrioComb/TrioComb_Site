@@ -7,7 +7,7 @@ export default function About() {
   return (
         <section className="relative md:py-24 py-16">
             <div className="container relative">
-                <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
+                <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6 comb-grid">
                     <div className="md:col-span-6">
                         <div className="lg:me-8">
                             <div className="relative">

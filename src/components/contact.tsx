@@ -11,7 +11,7 @@ export default function Contact() {
                     <p className="text-slate-400 text-lg max-w-2xl mx-auto">We're always excited to connect with talents and forward-thinking clients. <br />Please reach out to us using the form below, and we'll get back to you as soon as possible.</p>
                 </div>
 
-                <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
+                <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6 comb-grid">
                     <div className="lg:col-span-7 md:col-span-6">
                         <img src={contact} alt=""/>
                     </div>
