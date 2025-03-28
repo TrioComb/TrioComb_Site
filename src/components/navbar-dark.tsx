@@ -55,7 +55,7 @@ export default function NavbarDark() {
                             <Link1 className="nav-link cursor-pointer" activeClass="active" spy={true} smooth={true} duration={500} to="services">Services</Link1>
                         </li>
                         <li className="nav-item">
-                            <Link1 className="nav-link cursor-pointer" activeClass="active" spy={true} smooth={true} duration={500} to="review">Mission</Link1>
+                            <Link1 className="nav-link cursor-pointer" activeClass="active" spy={true} smooth={true} duration={500} to="mission">Mission</Link1>
                         </li>
                         <li className="nav-item">
                             <Link1 className="nav-link cursor-pointer" activeClass="active" spy={true} smooth={true} duration={500} to="blog">Blogs</Link1>

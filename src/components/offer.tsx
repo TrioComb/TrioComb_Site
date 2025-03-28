@@ -18,10 +18,10 @@ export default function Offer() {
             </div>
 
             <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
-                {offerData.map((item:OfferData)=>( 
-                    <div className="group relative overflow-hidden">
+                {offerData.map((item:OfferData, index:number)=>( 
+                    <div className="group relative overflow-hidden" key={index+'offer-item'}>
                         <div className="relative overflow-hidden rounded-md shadow-sm dark:shadow-gray-800">
-                            <img src={item.image} className="group-hover:scale-110 duration-500" alt=""/>
+                            <img src={item.image} className="group-hover:scale-110 duration-500 min-h-[365px] object-cover" alt=""/>
                         </div>
 
                         <div className="mt-6">

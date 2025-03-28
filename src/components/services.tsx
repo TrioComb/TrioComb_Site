@@ -13,10 +13,10 @@ export default function Services() {
                 </div>
 
                 <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-6 mt-6">
-                    {servicesData.map((item)=>{
+                    {servicesData.map((item, index)=>{
                         let Icon = item.icon
                         return(
-                            <div className="group rounded-md shadow-sm dark:shadow-gray-700 relative bg-white dark:bg-slate-900 p-6 overflow-hidden h-[340px]">
+                            <div className="group rounded-md shadow-sm dark:shadow-gray-700 relative bg-white dark:bg-slate-900 p-6 overflow-hidden h-[340px]" key={index+'service-item'}>
                                 <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-teal-500/10 text-teal-500 text-center rounded-full group-hover:bg-teal-500/10 duration-500">
                                     <Icon className="size-6 rotate-45"></Icon>
                                 </div>

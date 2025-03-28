@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import NavbarLight from '../components/navbar-light'
 import About from '../components/about';
 import Services from '../components/services';
-import Tab from '../components/tab';
+import Tab from '../components/mission';
 import Cta from '../components/cta';
 import Client from '../components/client';
 import Pricing from '../components/pricing';

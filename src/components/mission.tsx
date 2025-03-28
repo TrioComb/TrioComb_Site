@@ -1,29 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay } from 'swiper/modules'
 import blog1 from '../assets/images/blog/01.png'
 import blog2 from '../assets/images/blog/02.png'
 import blog3 from '../assets/images/blog/03.png'
 
-export default function Tab() {
+export default function Mission() {
   const [activeTab, setActiveTab] = useState<number>(1)
 
-  // Carousel effect
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveTab((prev) => (prev % 3) + 1) // Cycle 1 -> 2 -> 3 -> 1
-    }, 5000) // every 5 seconds
-
-    return () => clearInterval(interval)
-  }, [])
-
-  // Manual override resets interval
-  const handleTabClick = (tabIndex: number) => {
-    setActiveTab(tabIndex)
-  }
-
   return (
-    <section className="relative md:py-24 py-16">
+    <section className="relative md:py-24 py-16" id="mission">
       <div className="container relative">
-        {/* Header */}
         <div className="grid grid-cols-1 pb-6 text-center">
           <h3 className="font-semibold text-2xl leading-normal mb-4">Our Company Mission</h3>
           <p className="text-slate-400 max-w-3xl mx-auto">
@@ -32,14 +19,12 @@ export default function Tab() {
           </p>
         </div>
 
-        {/* Tab Section */}
         <div className="grid grid-cols-1 mt-6 gap-6">
-          {/* Horizontal Tabs */}
           <div className="overflow-x-auto">
             <ul className="flex flex-row gap-4 p-6 bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-700 rounded-md" role="tablist">
               <li role="presentation">
                 <button
-                  onClick={() => handleTabClick(1)}
+                  onClick={() => setActiveTab(1)}
                   className={`min-w-[250px] px-4 py-2 text-start text-base font-medium rounded-md hover:text-teal-500 duration-500 ${
                     activeTab === 1 ? 'text-white bg-teal-500 hover:text-white' : ''
                   }`}
@@ -50,7 +35,7 @@ export default function Tab() {
               </li>
               <li role="presentation">
                 <button
-                  onClick={() => handleTabClick(2)}
+                  onClick={() => setActiveTab(2)}
                   className={`min-w-[250px] px-4 py-2 text-start text-base font-medium rounded-md hover:text-teal-500 duration-500 ${
                     activeTab === 2 ? 'text-white bg-teal-500 hover:text-white' : ''
                   }`}
@@ -61,7 +46,7 @@ export default function Tab() {
               </li>
               <li role="presentation">
                 <button
-                  onClick={() => handleTabClick(3)}
+                  onClick={() => setActiveTab(3)}
                   className={`min-w-[250px] px-4 py-2 text-start text-base font-medium rounded-md hover:text-teal-500 duration-500 ${
                     activeTab === 3 ? 'text-white bg-teal-500 hover:text-white' : ''
                   }`}
@@ -73,11 +58,21 @@ export default function Tab() {
             </ul>
           </div>
 
-          {/* Tab Content */}
           <div>
-            <div className="w-full p-6 bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-700 rounded-md transition-all duration-500 ease-in-out">
-              {activeTab === 1 && (
-                <div>
+            <Swiper
+              className="w-full"
+              modules={[Autoplay]}
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+              }}
+              speed={1000}
+              loop={true}
+              onSlideChange={(swiper) => setActiveTab(swiper.realIndex + 1)}
+              initialSlide={activeTab - 1}
+            >
+              <SwiperSlide>
+                <div className="w-full p-6 bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-700 rounded-md">
                   <img src={blog1} className="w-full shadow-sm dark:shadow-gray-700 rounded-md" alt="" />
                   <div className="mt-6">
                     <h5 className="text-lg font-medium">Empowering Clients and Professionals</h5>
@@ -86,20 +81,22 @@ export default function Tab() {
                     </p>
                   </div>
                 </div>
-              )}
-              {activeTab === 2 && (
-                <div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="w-full p-6 bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-700 rounded-md">
                   <img src={blog2} className="w-full shadow-sm dark:shadow-gray-700 rounded-md" alt="" />
                   <div className="mt-6">
                     <h5 className="text-lg font-medium">Support Global Engineers Through Opportunity</h5>
                     <p className="text-slate-400 mt-4">
-                      Our platform enables engineers worldwide to access U.S. job markets, offering career continuity during life’s uncertainties.
+                      Our platform enables engineers worldwide to access U.S. job markets, offering career continuity during life's uncertainties.
                     </p>
                   </div>
                 </div>
-              )}
-              {activeTab === 3 && (
-                <div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="w-full p-6 bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-700 rounded-md">
                   <img src={blog3} className="w-full shadow-sm dark:shadow-gray-700 rounded-md" alt="" />
                   <div className="mt-6">
                     <h5 className="text-lg font-medium">Equal Work, Equal Pay Across The World</h5>
@@ -108,8 +105,8 @@ export default function Tab() {
                     </p>
                   </div>
                 </div>
-              )}
-            </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>
