@@ -16,7 +16,7 @@ export default function Footer() {
                         </div>
 
                         <div className="lg:col-span-6 text-center mt-6 md:mt-0">
-                            <p className="mb-0">© {new Date().getFullYear()} Comb Inc. Design & Develop with <i className="mdi mdi-heart text-red-600"></i> by <a href="https://shreethemes.in/" target="_blank" className="text-reset">Comb Devs</a>.</p>
+                            <p className="mb-0">© {new Date().getFullYear()} Comb Inc. Design & Develop with <i className="mdi mdi-heart text-red-600"></i> by <a href="#" target="_blank" className="text-reset">Comb Devs</a>.</p>
                         </div>
 
                         <div className="subcribe-form lg:col-span-5">

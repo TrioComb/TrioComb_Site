@@ -411,10 +411,7 @@
       max-width: 992px;
     }
     @media (width >= 1140px) {
-      max-width: 1140px;
-    }
-    @media (width >= 1140px) {
-      max-width: 1280px;
+      max-width: 90%;
     }
   }
   .m-2 {
@@ -691,14 +688,29 @@
   .w-full {
     width: 100%;
   }
+  .w-300px {
+    width: 300px;
+  }
   .max-w-xl {
     max-width: var(--container-xl);
   }
+  .max-h-\[365px\] {
+    max-height: 365px;
+  }
+  .max-h-\[450px\] {
+    max-height: 450px;
+  } 
+  .max-h-\[500px\] {
+    max-height: 500px;
+  } 
   .min-h-\[245px\] {
     min-height: 245px;
   }
   .min-h-\[365px\] {
     min-height: 365px;
+  } 
+  .min-h-\[500px\] {
+    min-height: 500px;
   } 
   .min-w-\[65px\] {
     min-width: 65px;
@@ -1598,6 +1610,11 @@
       inset-inline-end: calc(var(--spacing) * -10);
     }
   }
+  .md\:col-span-2 {
+    @media (width >= 720px) {
+      grid-column: span 2 / span 2;
+    }
+  }
   .md\:col-span-4 {
     @media (width >= 720px) {
       grid-column: span 4 / span 4;
@@ -1732,6 +1749,11 @@
   .md\:text-start {
     @media (width >= 720px) {
       text-align: start;
+    }
+  }
+  .lg\:col-span-2 {
+    @media (width >= 960px) {
+      grid-column: span 2 / span 2;
     }
   }
   .lg\:col-span-3 {
@@ -2088,7 +2110,7 @@ body {
 }
 .container {
   width: 100%;
-  margin: 24px;
+  margin: auto;
   padding-inline: calc(var(--spacing) * 3);
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {

@@ -37,11 +37,6 @@ export default function NavbarLight() {
                 </Link>
 
                 <div className="nav-icons flex items-center lg_992:order-2 ms-auto md:ms-8">
-                    <ul className="list-none menu-social mb-0">
-                        <li className="inline">
-                            <Link to="" className="h-8 px-4 text-[12px] tracking-wider inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white uppercase">Login</Link>
-                        </li>
-                    </ul>
                     <button onClick={(e) => { e.preventDefault(); setMenu(!menu) }} data-collapse="menu-collapse" type="button" className="collapse-btn inline-flex items-center ms-2 text-dark dark:text-white lg_992:hidden" aria-controls="menu-collapse" aria-expanded="false">
                         <span className="sr-only">Navigation Menu</span>
                         <i className="mdi mdi-menu text-[24px]"></i>
