@@ -9,7 +9,7 @@ import Tab from '../components/tab';
 import Cta from '../components/cta';
 import Client from '../components/client';
 import Pricing from '../components/pricing';
-import Blog from '../components/blog';
+import Offer from '../components/offer';
 import Contact from '../components/contact';
 import Footer from '../components/footer';
 
@@ -20,7 +20,7 @@ import ModalVideo from 'react-modal-video';
 import '../../node_modules/react-modal-video/css/modal-video.css'
 
 import aboutImg from '../assets/images/about2.jpg'
-import favIcon from '../assets/images/favicon.ico'
+import favIcon from '../assets/images/favicon.png'
 
 export default function IndexThree() {
   const [isOpen, setOpen] = useState(false);
@@ -82,8 +82,7 @@ export default function IndexThree() {
       <Tab/>
       <Cta/>
       <Client/>
-      <Pricing/>
-      <Blog/>
+      <Offer/>
       <Contact/>
       <Footer/>
       <ModalVideo

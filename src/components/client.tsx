@@ -44,7 +44,7 @@ export default function Client() {
       };
       if (typeof window !== 'undefined'){
     return (
-    <section className="relative md:py-24 py-16" id="review">
+    <section className="relative md:py-24 py-16 bg-slate-50" id="review">
         <div className="container relative">
             <div className="grid grid-cols-1 pb-6 text-center">
                 <h3 className="font-semibold text-2xl leading-normal mb-4">What Our Users Say</h3>

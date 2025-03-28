@@ -24,9 +24,9 @@ export default function About() {
 
                     <div className="md:col-span-6">
                         <div className="lg:ms-8">
-                            <h6 className="text-teal-500 text-sm font-semibold uppercase mb-2">Who Are We ?</h6>
-                            <h3 className="font-semibold text-2xl leading-normal mb-4">We're a global stakeholder <br/> relations and partnership <br/> building consultancy.</h3>
-                            <p className="text-slate-400 max-w-xl mb-6">Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Techwind network, and much more with just a few taps. commodo consequat. Duis aute irure.</p>
+                            <h6 className="text-teal-500 text-4xl font-semibold uppercase mb-2">Who Are We ?</h6>
+                            <h3 className="font-semibold text-2xl leading-normal mb-4">We're Talent agency that connects talents with clients who are facing unexpected personal or professional challegnes</h3>
+                            <p className="text-slate-400 max-w-xl mb-6">We connect brilliant talents with real opportunities, and help them grow their careers.Tap into a world where you can build high-impact products, collaborate with forward-thinking companies, and grow your career anywhere. <br/> <br/> Secure meaningful, long-term roles, get competitive pay, sharpen your technical edge, and join a global community that's always evloving with you. No barriers. Just pure potential-unlocked. Wheter y ou're stepping in to keep projects on track, or leading innovations across web, mobile, or cloud - Comb makes it seamless to connect, deliver, and thrive.</p>
                             <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">Read More <i className="mdi mdi-chevron-right align-middle ms-0.5"></i></Link>
                         </div>
                     </div>

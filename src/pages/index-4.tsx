@@ -7,7 +7,7 @@ import about4 from '../assets/images/ab4.jpg'
 import about5 from '../assets/images/ab5.jpg'
 import about6 from '../assets/images/ab6.jpg'
 import about7 from '../assets/images/ab7.jpg'
-import favIcon from '../assets/images/favicon.ico'
+import favIcon from '../assets/images/favicon.png'
 
 import NavbarDark from '../components/navbar-dark'
 import Layout from '../components/layout'
@@ -18,7 +18,7 @@ import Tab from '../components/tab'
 import Cta from '../components/cta'
 import Client from '../components/client'
 import Pricing from '../components/pricing'
-import Blog from '../components/blog'
+import Offer from '../components/offer'
 import Contact from '../components/contact'
 import Footer from '../components/footer'
 
@@ -91,8 +91,7 @@ export default function IndexFour() {
       <Tab/>
       <Cta/>
       <Client/>
-      <Pricing/>
-      <Blog/>
+      <Offer/>
       <Contact/>
       <Footer/>
     </Layout>

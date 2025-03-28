@@ -8,7 +8,7 @@ export default function Contact() {
                 <div className="grid grid-cols-1 pb-6 text-center">
                     <h3 className="font-semibold text-2xl leading-normal mb-4">Get in touch </h3>
 
-                    <p className="text-slate-400 max-w-xl mx-auto">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+                    <p className="text-slate-400 text-lg max-w-2xl mx-auto">We're always excited to connect with talents and forward-thinking clients. <br />Please reach out to us using the form below, and we'll get back to you as soon as possible.</p>
                 </div>
 
                 <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
