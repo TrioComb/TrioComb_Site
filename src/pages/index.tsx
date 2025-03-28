@@ -1,61 +1,93 @@
-import * as React from "react"
-import { Link, type HeadFC, type PageProps } from "gatsby"
+import React from 'react'
 
-import Layout from "../components/layout"
-import NavbarDark from "../components/navbar-dark"
-import About from "../components/about"
-import Services from "../components/services"
-import Tab from "../components/tab"
-import Cta from "../components/cta"
-import Client from "../components/client"
-import Pricing from "../components/pricing"
-import Blog from "../components/blog"
-import Contact from "../components/contact"
-import Footer from "../components/footer"
+import Layout from '../components/layout'
+import NavbarLight from '../components/navbar-light'
+import About from '../components/about';
+import Services from '../components/services';
+import Tab from '../components/tab';
+import Cta from '../components/cta';
+import Client from '../components/client';
+import Pricing from '../components/pricing';
+import Offer from '../components/offer';
+import Contact from '../components/contact';
+import Footer from '../components/footer';
 
-import hero from "../assets/images/design-team.svg"
-import favIcon from '../assets/images/favicon.ico'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {Autoplay} from 'swiper/modules';
+import 'swiper/css';
 
-const IndexPage: React.FC<PageProps> = () => {
+import favIcon from '../assets/images/favicon.png'
+
+export default function IndexSeven() {
   return (
     <Layout>
-      <NavbarDark/>
+      <NavbarLight/>
 
-        <section className="relative overflow-hidden md:py-48 py-40 bg-teal-500/5 dark:bg-teal-500/20" id="home">
-            <div className="container relative mt-8">
-                <div className="grid md:grid-cols-2 grid-cols-1 gap-6 items-center">
-                    <div>
-                        <h1 className="font-semibold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl mb-5">Get Creative & Modern With Upcover</h1>
-                        <p className="text-slate-400 text-lg max-w-xl">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
-                        <div className="mt-6">
-                            <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">Contact Us <i className="mdi mdi-chevron-right ms-1"></i></Link>
+      <section className="swiper-slider-hero relative block h-screen" id="home">
+        <div className="swiper swiper-container absolute end-0 top-0 w-full h-full">
+            <Swiper className="swiper-wrapper"
+
+              modules={[Autoplay]}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              speed={2000}
+              loop={true}
+            >
+                <SwiperSlide className="swiper-slide flex items-center overflow-hidden">
+                    <div className="slide-inner absolute end-0 top-0 w-full h-full slide-bg-image flex items-center bg-[url('../../assets/images/bg/1.jpg')] bg-center;">
+                        <div className="absolute inset-0 bg-slate-900/70"></div>
+                        <div className="container relative">
+                            <div className="grid grid-cols-1">
+                                <div className="">
+                                    <h1 className="font-bold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl capitalize text-white mb-5">Connect with <br/> customers smartly</h1>
+                                    <p className="text-white/70 text-lg max-w-xl">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+                                    
+                                    <div className="mt-6">
+                                        <a href="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">See More</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </div> 
+                </SwiperSlide> 
 
-                    <div className="lg:ms-8">
-                        <div className="relative">
-                            <img src={hero} className="relative top-16" alt=""/>
-                            <div className="overflow-hidden absolute md:size-[500px] size-[400px] bg-gradient-to-tl to-teal-500/20 via-teal-500/70 from-teal-500 bottom-1/2 translate-y-1/2 md:start-0 start-1/2 ltr:md:translate-x-0 ltr:-translate-x-1/2 rtl:md:translate-x-0 rtl:translate-x-1/2 -z-1 shadow-md shadow-teal-500/10 rounded-full"></div>
+                <SwiperSlide className="swiper-slide flex items-center overflow-hidden">
+                    <div className="slide-inner absolute end-0 top-0 w-full h-full slide-bg-image flex items-center  bg-[url('../../assets/images/bg/2.jpg')] bg-center;">
+                        <div className="absolute inset-0 bg-slate-900/70"></div>
+                        <div className="container relative">
+                            <div className="grid grid-cols-1">
+                                <div className="">
+                                    <h1 className="font-bold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl capitalize text-white mb-5">Get all the <br/> inspirations for your business</h1>
+                                    <p className="text-white/70 text-lg max-w-xl">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+                                    
+                                    <div className="mt-6">
+                                        <a href="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">See More</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    </div> 
+                </SwiperSlide>
+            </Swiper>
 
-        <About/>
-        <Services/>
-        <Tab/>
-        <Cta/>
-        <Client/>
-        <Pricing/>
-        <Blog/>
-        <Contact/>
-        <Footer/>
+            <div className="swiper-pagination"></div>
+            <div className="swiper-button-next bg-transparent !size-[35px] leading-[35px] -mt-[30px] bg-none border border-solid border-white/50 text-white hover:bg-teal-500 rounded-full text-center"></div>
+            <div className="swiper-button-prev bg-transparent !size-[35px] leading-[35px] -mt-[30px] bg-none border border-solid border-white/50 text-white hover:bg-teal-500 rounded-full text-center"></div>
+        </div>
+    </section>
+    <About/>
+    <Services/>
+    <Tab/>
+    <Client/>
+    <Offer/>
+    <Contact/>
+    <Footer/>
     </Layout>
   )
 }
 
-export default IndexPage
 
 export function Head(){
     return(
@@ -69,3 +101,4 @@ export function Head(){
       </>
     )
   }
+

@@ -9,12 +9,12 @@ import Tab from '../components/tab'
 import Cta from '../components/cta'
 import Client from '../components/client'
 import Pricing from '../components/pricing'
-import Blog from '../components/blog'
+import Offer from '../components/offer'
 import Contact from '../components/contact'
 import Footer from '../components/footer'
 
 import aboutImg from '../assets/images/home.png'
-import favIcon from '../assets/images/favicon.ico'
+import favIcon from '../assets/images/favicon.png'
 
 export default function IndexSix() {
   return (
@@ -47,8 +47,7 @@ export default function IndexSix() {
         <Tab/>
         <Cta/>
         <Client/>
-        <Pricing/>
-        <Blog/>
+        <Offer/>
         <Contact/>
         <Footer/>
     </Layout>

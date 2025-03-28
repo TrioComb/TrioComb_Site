@@ -9,11 +9,11 @@ import Tab from '../components/tab';
 import Cta from '../components/cta';
 import Client from '../components/client';
 import Pricing from '../components/pricing';
-import Blog from '../components/blog';
+import Offer from '../components/offer';
 import Contact from '../components/contact';
 import Footer from '../components/footer';
 
-import favIcon from '../assets/images/favicon.ico'
+import favIcon from '../assets/images/favicon.png'
 
 import ModalVideo from 'react-modal-video';
 import '../../node_modules/react-modal-video/css/modal-video.css'
@@ -65,8 +65,7 @@ export default function IndexTwo() {
       <Tab/>
       <Cta/>
       <Client/>
-      <Pricing/>
-      <Blog/>
+      <Offer/>
       <Contact/>
       <Footer/>
 

@@ -12,29 +12,28 @@ export default function NavbarLight() {
         if (typeof window !== 'undefined'){
             setScroll(window.scrollY > 50);
         }
-      }, []);
+    }, []);
 
     useEffect(() => {
         window.scrollTo(0,0)
         if (typeof window !== 'undefined'){
-
             window.addEventListener('scroll', handleScroll);
             
             return () => {
                 window.removeEventListener('scroll', handleScroll);
             };
         }
-        
     }, [handleScroll]);
-  return (
+
+    return (
         <nav className={`navbar ${scroll ? 'is-sticky' : ''}`} id="navbar">
             <div className="container relative flex flex-wrap items-center justify-between">
                 <Link className="navbar-brand md:me-8" to="/">
                     <span className="inline-block dark:hidden">
-                        <img src={logoDark} className="l-dark" alt=""/>
-                        <img src={logoLight} className="l-light" alt=""/>
+                        <img src={logoLight} className="l-dark" width={120} alt=""/>
+                        <img src={logoDark} className="l-light" width={120} alt=""/>
                     </span>
-                    <img src={logoLight} className="hidden dark:inline-block" alt=""/>
+                    <img src={logoLight} className="hidden dark:inline-block" alt="" width={120}/>
                 </Link>
 
                 <div className="nav-icons flex items-center lg_992:order-2 ms-auto md:ms-8">
@@ -61,9 +60,6 @@ export default function NavbarLight() {
                             <Link1 className="nav-link cursor-pointer" activeClass="active" spy={true} smooth={true} duration={500} to="review">Testimonial</Link1>
                         </li>
                         <li className="nav-item">
-                            <Link1 className="nav-link cursor-pointer" activeClass="active" spy={true} smooth={true} duration={500} to="pricing">Pricing</Link1>
-                        </li>
-                        <li className="nav-item">
                             <Link1 className="nav-link cursor-pointer" activeClass="active" spy={true} smooth={true} duration={500} to="blog">Blogs</Link1>
                         </li>
                         <li className="nav-item">
@@ -73,5 +69,5 @@ export default function NavbarLight() {
                 </div>
             </div>
         </nav>
-  )
+    )
 }
