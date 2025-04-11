@@ -14,7 +14,7 @@ export default function Offer() {
         <div className="container relative">
             <div className="grid grid-cols-1 pb-6 text-center">
                 <h3 className="font-semibold text-2xl leading-normal mb-4">What We Offer</h3>
-                <p className="text-slate-400 max-w-xl mx-auto">We offer a collaborative environment where global talents can thrive and clients can scale with confidence. By fostering trust, flexibility, and opportunity, we create impactful partnerships that dliever real results-for everyone involved.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">We offer a collaborative environment where global talents can thrive and clients can scale with confidence. By fostering trust, flexibility, and opportunity, we create impactful partnerships that deliver real results-for everyone involved.</p>
             </div>
 
             <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
