@@ -89,7 +89,7 @@ export const offerData = [
     {
         image: blog2,
         title: 'Lucrative Collaboration',
-        desc: `We offer lucrative projects and foster respectful, trusthworthy relationships between talents and clients.`
+        desc: `We offer lucrative projects and foster respectful, trustworthy relationships between talents and clients.`
     },
     {
         image: blog3,
