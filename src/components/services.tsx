@@ -9,7 +9,7 @@ export default function Services() {
                 <div className="grid grid-cols-1 pb-6 text-center">
                     <h3 className="font-semibold text-2xl leading-normal mb-4">Our Services</h3>
 
-                    <p className="text-slate-400 max-w-xl mx-auto">We provide extensive support that makes life easier for both clients and global talents - enabling smooth collaboration, stress-free workflows, and successful outcomes every step of the way.</p>
+                    <p className="text-slate-400 max-w-xl mx-auto">We provide extensive support that makes life easier for both clients and global talents-enabling smooth collaboration, stress-free workflows, and successful outcomes every step of the way.</p>
                 </div>
 
                 <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-6 mt-6">

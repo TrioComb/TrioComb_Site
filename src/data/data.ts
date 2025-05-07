@@ -84,12 +84,12 @@ export const offerData = [
     {
         image: blog1,
         title: 'Design Your Apps In Your Own Way',
-        desc: `We offer robust support and mentorship to empower talent in securing jobs and excelling his project work`
+        desc: `We offer robust support and mentorship to empower talent in securing jobs and excelling in their project work`
     },
     {
         image: blog2,
         title: 'Lucrative Collaboration',
-        desc: `We offer lucrative projects and foster respectful, trustworthy relationships between talents and clients.`
+        desc: `We offer lucrative projects and foster respectful, reliable relationships between talents and clients.`
     },
     {
         image: blog3,
@@ -99,7 +99,7 @@ export const offerData = [
     {
         image: blog4,
         title: 'Strong Community',
-        desc: `We offer a robust talent community, enabling talents to easily find individuals aligned with their needs.`
+        desc: `We offer a robust talent community, enabling talents to find individuals who are aligned with their needs easily.`
     },
 ]
 export const partnerData = [
