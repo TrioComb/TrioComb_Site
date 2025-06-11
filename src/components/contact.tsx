@@ -13,10 +13,23 @@ export default function Contact() {
         setError('')
         setSuccess(false)
 
+        const form = e.currentTarget
+        const name = form.name.value.trim()
+        const email = form.email.value.trim()
+        const subject = form.subject.value.trim()
+        const message = form.message.value.trim()
+
+        if (!name || !email || !subject || !message) {
+            setError('Please fill in all fields')
+            setLoading(false)
+            return
+        }
+        
         const timestampInput = e.currentTarget.querySelector('#time') as HTMLInputElement
         timestampInput.value = new Date().toISOString()
 
         try {
+            
             await emailjs.sendForm(
                 process.env.GATSBY_SERVICE_ID,
                 process.env.GATSBY_TEMPLATE_ID,
